@@ -1,0 +1,71 @@
+.modal, .over_modal{
+    background-color: $accent;
+    border-radius: 20px;
+    border: 2px solid $border;
+    width: 65%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+.primary{
+    position: relative;
+    // width: 0px;
+   
+}
+.text{
+    position: relative;
+
+}
+.girlFrog, .Frog {
+    width: 130px;
+}
+.girlFrog{
+    position: absolute;
+    top: -50px;
+    left: -20px;
+}
+.Frog{
+    position: absolute;
+    bottom: -50px;
+    right: -20px;
+}
+
+
+@media (max-width: 800px){
+    .modal, .over_modal {
+       width: 50%;
+    }
+    .girlFrog, .Frog{
+        width: 70px;
+    }
+    .text h2{
+        font-size: 2.5rem;
+    }
+    .text h3, .text p, .text button{
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media (max-width: 500px){
+    .modal, .over_modal {
+       width: 20%;
+    }
+    .girlFrog, .Frog{
+        display: none;
+    }
+    .text h2{
+        font-size: .9rem;
+    }
+    .text h3, .text p, .text button{
+        font-size: .7rem;
+    }
+
+}

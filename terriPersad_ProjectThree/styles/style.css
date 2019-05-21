@@ -1,0 +1,356 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden; }
+
+html {
+  font-family: 'Yeseva One', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #5e4b56;
+  width: 100vw; }
+
+h1, h2, h3, h4, p, a, button {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #fcd0a1;
+  text-align: center; }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  color: #5e4b56;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #392b58;
+  padding: 10px;
+  text-transform: capitalize; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #392b58; }
+
+button {
+  background: #c5979d;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 2px solid #392b58;
+  text-transform: capitalize; }
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto; }
+
+main {
+  margin: 0; }
+
+.game {
+  width: 540px;
+  height: 540px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.card {
+  width: calc(25% - 10px);
+  height: calc(30% - 10px);
+  margin: 5px;
+  position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.front, .back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  border: 3px solid #392b58;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.front {
+  background: #c5979d; }
+
+#memory {
+  width: 540px;
+  height: 540px;
+  margin: auto; }
+
+.back {
+  background: #afd2e9;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.frog {
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.card_match {
+  visibility: hidden; }
+
+.selected_card {
+  border: 4px solid #afd2e9;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem; }
+
+  .front, .back {
+    width: 60%;
+    height: 60%;
+    margin: 0; }
+
+  .card {
+    width: calc(30% - 10px);
+    height: calc(35% - 10px);
+    margin: 5px; }
+
+  .game {
+    margin: 0; }
+
+  .frog {
+    width: 50px; } }
+@media (max-width: 500px) {
+  h1 {
+    display: none; } }
+.modal, .over_modal {
+  background-color: #afd2e9;
+  border-radius: 20px;
+  border: 2px solid #392b58;
+  width: 65%;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none; }
+
+.primary {
+  position: relative; }
+
+.text {
+  position: relative; }
+
+.girlFrog, .Frog {
+  width: 130px; }
+
+.girlFrog {
+  position: absolute;
+  top: -50px;
+  left: -20px; }
+
+.Frog {
+  position: absolute;
+  bottom: -50px;
+  right: -20px; }
+
+@media (max-width: 800px) {
+  .modal, .over_modal {
+    width: 50%; }
+
+  .girlFrog, .Frog {
+    width: 70px; }
+
+  .text h2 {
+    font-size: 2.5rem; }
+
+  .text h3, .text p, .text button {
+    font-size: 1rem; } }
+@media (max-width: 500px) {
+  .modal, .over_modal {
+    width: 20%; }
+
+  .girlFrog, .Frog {
+    display: none; }
+
+  .text h2 {
+    font-size: .9rem; }
+
+  .text h3, .text p, .text button {
+    font-size: .7rem; } }
+
+
